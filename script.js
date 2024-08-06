@@ -48,7 +48,7 @@ function searchContact() {
         case 'find': {
             const name = prompt('Enter contact name: ');
             if (!name?.trim()) {
-                alert('Name is required to find a contact.');
+                alert('You have entered nothing!');
                 return;
             }
             const contact = contactBook.findContactName(name);
@@ -66,7 +66,7 @@ function searchContact() {
             const newEmail = prompt('Enter an email: ');
 
             if (!newName?.trim() || !newNumber?.trim() || !newEmail?.trim()) {
-                alert('All fields are required to add a new contact.');
+                alert('All fields are empty or was canceled. Try one more time!');
                 return;
             }
 

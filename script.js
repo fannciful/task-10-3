@@ -33,7 +33,6 @@ const contactBook = {
             return;
         }
         this.contacts.push({name, number, email});
-        // localStorage.setItem('contacts', JSON.stringify(this.contacts)); // Removed as per requirement
     }
 };
 
